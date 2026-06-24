@@ -1,0 +1,32 @@
+# CajaPDF
+
+Herramienta de escritorio para **Windows** que permite **unir, dividir y comprimir PDF** — **100% en tu PC** (nada se sube a internet). Pensada para usuarios no técnicos.
+
+## Funciones
+- **Unir**: varios PDF en uno, en el orden que elijas.
+- **Dividir**: una PDF por cada página, o extraer un rango de páginas.
+- **Comprimir**: reduce el peso recomprimiendo las imágenes; nunca deja el archivo más grande que el original.
+
+## Privacidad
+Todo el procesamiento es **local**. No requiere conexión a internet ni sube tus documentos a ningún servidor — ideal para contratos, nóminas, DNIs e información confidencial.
+
+## Ejecutar en desarrollo
+```powershell
+./run.ps1
+```
+(usa el venv de CapturaPro, que comparte las dependencias; o crea uno con `requirements.txt`)
+
+## Construir el ejecutable
+```powershell
+./build/build.ps1
+```
+→ `dist\CajaPDF\CajaPDF.exe`
+
+## Crear el instalador único
+```powershell
+./build/build-installer.ps1
+```
+→ `installer\CajaPDF-Setup-1.0.0.exe` (instala sin admin, con accesos directos y desinstalador)
+
+## Stack
+Python 3.14 + Tkinter + **pypdf** (unir/dividir) + **pikepdf** (comprimir) + Pillow + PyInstaller + Inno Setup.

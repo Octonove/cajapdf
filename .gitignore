@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+/build/CajaPDF/
+/build/*.log
+/build/icon_preview.png
+/dist/
+/installer/

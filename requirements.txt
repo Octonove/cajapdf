@@ -1,0 +1,7 @@
+# Dependencias de ejecucion
+pypdf>=5.0          # unir / dividir
+pikepdf>=9.0        # comprimir (recompresion de imagenes y streams)
+Pillow>=11.0        # recompresion de imagenes
+
+# Solo para construir el .exe
+pyinstaller>=6.21
