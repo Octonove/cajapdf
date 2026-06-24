@@ -2,6 +2,14 @@
 
 Herramienta de escritorio para **Windows** que permite **unir, dividir y comprimir PDF** — **100% en tu PC** (nada se sube a internet). Pensada para usuarios no técnicos.
 
+## ⬇️ Descargar (Windows 10/11)
+
+### ➡️ [**Descargar CajaPDF (instalador .exe)**](https://github.com/Octonove/cajapdf/releases/latest/download/CajaPDF-Setup.exe)
+
+Descarga **directa** del instalador, sin registro. También puedes ver la [última versión y notas](https://github.com/Octonove/cajapdf/releases/latest).
+
+> Si Windows muestra *"Windows protegió tu PC"* (es normal en programas nuevos sin firma): pulsa **Más información → Ejecutar de todas formas**. Se instala sin permisos de administrador.
+
 ## Funciones
 - **Unir**: varios PDF en uno, en el orden que elijas.
 - **Dividir**: una PDF por cada página, o extraer un rango de páginas.
