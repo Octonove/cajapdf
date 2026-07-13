@@ -13,7 +13,7 @@ Descarga **directa** del instalador, sin registro. También puedes ver la [últi
 ## Funciones
 - **Unir**: varios PDF en uno, en el orden que elijas.
 - **Dividir**: una PDF por cada página, o extraer un rango de páginas.
-- **Comprimir**: reduce el peso recomprimiendo las imágenes; nunca deja el archivo más grande que el original.
+- **Comprimir** con 3 niveles (suave/media/fuerte): remuestrea y recomprime las imágenes del PDF — ahorros reales del 80-95% en documentos escaneados o con fotos; nunca deja el archivo más grande que el original.
 
 ## Privacidad
 Todo el procesamiento es **local**. No requiere conexión a internet ni sube tus documentos a ningún servidor — ideal para contratos, nóminas, DNIs e información confidencial.

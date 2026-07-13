@@ -245,16 +245,25 @@ class App:
         if not self.compress_path:
             messagebox.showinfo(APP_NAME, "Elige primero un PDF.")
             return
-        quality = {"suave": 75, "media": 55, "fuerte": 38}[self.compress_level.get()]
+        # calidad JPEG y resolucion maxima (lado mayor en px) por nivel: el
+        # remuestreo es lo que de verdad reduce fotos/disenos a alta resolucion
+        quality, max_side = {"suave": (75, 2200),
+                             "media": (55, 1600),
+                             "fuerte": (38, 1100)}[self.compress_level.get()]
         out = filedialog.asksaveasfilename(
             initialdir=self.outdir,
             initialfile=f"{Path(self.compress_path).stem}_comprimido.pdf",
             defaultextension=".pdf", filetypes=[("PDF", "*.pdf")])
         if not out:
             return
+        if Path(out).resolve() == Path(self.compress_path).resolve():
+            messagebox.showinfo(APP_NAME, "Elige un nombre de archivo distinto "
+                                          "del PDF original.")
+            return
 
         def work():
-            return pdfops.compress(self.compress_path, out, quality=quality)
+            return pdfops.compress(self.compress_path, out, quality=quality,
+                                   max_side=max_side)
 
         def done(value, error):
             if error:

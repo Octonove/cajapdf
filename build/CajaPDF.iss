@@ -1,6 +1,8 @@
 ; Instalador de CajaPDF (Inno Setup). Instalacion por usuario, sin admin.
 #define MyAppName "CajaPDF"
-#define MyAppVersion "1.0.0"
+#ifndef MyAppVersion
+  #define MyAppVersion "1.1.0"
+#endif
 #define MyAppPublisher "SimplificaconIA"
 #define MyAppExeName "CajaPDF.exe"
 
