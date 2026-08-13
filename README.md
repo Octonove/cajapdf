@@ -1,40 +1,53 @@
 # CajaPDF
 
-Herramienta de escritorio para **Windows** que permite **unir, dividir y comprimir PDF** — **100% en tu PC** (nada se sube a internet). Pensada para usuarios no técnicos.
+[![license](https://img.shields.io/github/license/Octonove/cajapdf)](LICENSE)
+[![release](https://img.shields.io/github/v/release/Octonove/cajapdf)](https://github.com/Octonove/cajapdf/releases/latest)
+[![platform](https://img.shields.io/badge/platform-Windows%2010%2F11-1E3A5F)](https://github.com/Octonove/cajapdf/releases/latest)
 
-## ⬇️ Descargar (Windows 10/11)
+The tiny PDF utility: merge, split and compress — free, offline, no accounts.
 
-### ➡️ [**Descargar CajaPDF (instalador .exe)**](https://github.com/Octonove/cajapdf/releases/latest/download/CajaPDF-Setup.exe)
+**Free · Open source (MIT) · 100% local — nothing ever leaves your PC · No accounts, no limits, no watermarks**
 
-Descarga **directa** del instalador, sin registro. También puedes ver la [última versión y notas](https://github.com/Octonove/cajapdf/releases/latest).
+<img src="docs/screenshot.png" width="720" alt="CajaPDF screenshot">
 
-> Si Windows muestra *"Windows protegió tu PC"* (es normal en programas nuevos sin firma): pulsa **Más información → Ejecutar de todas formas**. Se instala sin permisos de administrador.
+> 🇪🇸 ¿Prefieres leerlo en español? → **[README en español](README.es.md)**
 
-## Funciones
-- **Unir**: varios PDF en uno, en el orden que elijas.
-- **Dividir**: una PDF por cada página, o extraer un rango de páginas.
-- **Comprimir** con 3 niveles (suave/media/fuerte): remuestrea y recomprime las imágenes del PDF — ahorros reales del 80-95% en documentos escaneados o con fotos; nunca deja el archivo más grande que el original.
+## Features
 
-## Privacidad
-Todo el procesamiento es **local**. No requiere conexión a internet ni sube tus documentos a ningún servidor — ideal para contratos, nóminas, DNIs e información confidencial.
+- Merge several PDFs into one
+- Split a PDF into pages or ranges
+- Compress heavy PDFs before sending them
+- Minimal, fast, 100% local
 
-## Ejecutar en desarrollo
-```powershell
-./run.ps1
-```
-(usa el venv de CapturaPro, que comparte las dependencias; o crea uno con `requirements.txt`)
+## Download (Windows 10/11)
 
-## Construir el ejecutable
-```powershell
-./build/build.ps1
-```
-→ `dist\CajaPDF\CajaPDF.exe`
+### ➡️ [**Download CajaPDF (installer .exe)**](https://github.com/Octonove/cajapdf/releases/latest/download/CajaPDF-Setup.exe)
 
-## Crear el instalador único
-```powershell
-./build/build-installer.ps1
-```
-→ `installer\CajaPDF-Setup-1.0.0.exe` (instala sin admin, con accesos directos y desinstalador)
+Direct download, no sign-up. If Windows shows *"Windows protected your PC"* (normal for new unsigned apps): click **More info → Run anyway**. Installs without administrator rights.
 
-## Stack
-Python 3.14 + Tkinter + **pypdf** (unir/dividir) + **pikepdf** (comprimir) + Pillow + PyInstaller + Inno Setup.
+> ⭐ **If CajaPDF is useful to you, a star on GitHub is the best way to support it — it costs nothing and helps a lot.**
+
+## More free local-first tools
+
+Every tool in this family follows the same rules: free, open source, and nothing leaves your PC.
+
+| Tool | What it does |
+|---|---|
+| [CapturaPro](https://github.com/Octonove/capturapro) | Screenshots, GIFs and screen recordings for Windows — annotated, watermark-free, 100% local. |
+| [TranscriptorIA](https://github.com/Octonove/transcriptor-ia) | Audio & video to text and .srt subtitles with local Whisper AI — free, private, unlimited. |
+| [PDFLocal](https://github.com/Octonove/pdflocal) | The full PDF toolbox for Windows: merge, split, compress, sign, OCR and chat with your documents — no uploads. |
+| [CapturaStudio](https://github.com/Octonove/capturastudio) | An OBS-style recording & streaming studio with local AI superpowers — record, stream, auto-edit. |
+| [GuiaClick](https://github.com/Octonove/guiaclick) | Record your clicks, get a step-by-step guide — annotated screenshots, blur, PDF/HTML export. Like Scribe, but local. |
+| [ActaLocal](https://github.com/Octonove/actalocal) | Meetings → minutes: local Whisper transcription plus AI summary, decisions and action items. |
+| [AutoEscritorio](https://github.com/Octonove/autoescritorio) | Trigger→action automation for Windows: watch folders, hotkeys, USB, clipboard — simple and local. |
+| [BalanceLocal](https://github.com/Octonove/balancelocal) | Your work Wrapped: where your time actually goes, as shareable cards, a PDF report and a mini-video. |
+| [CajaNegra](https://github.com/Octonove/cajanegra) | A dashcam for your PC: the last minutes of your screen, one hotkey away from a perfect incident report. |
+| [FichajeLocal](https://github.com/Octonove/fichajelocal) | A local time-clock kiosk for small business: PIN check-in, tamper-evident records, accountant-ready reports. |
+| [ITVLocal](https://github.com/Octonove/itvlocal) | An MOT-style inspection for your PC: 1–3 minutes, a 0–10 score and a PDF certificate. Inspects, never modifies. |
+| [SonarArchivo](https://github.com/Octonove/sonararchivo) | Find files by what's INSIDE them: local full-text search over your messy folders and old drives. |
+
+Also: **[CRBRO](https://github.com/Octonove/crbro-memory)** — persistent neural memory for AI agents (MCP server).
+
+## License
+
+[MIT](LICENSE) — see also [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) where present.
